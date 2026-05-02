@@ -23,6 +23,13 @@ public class ProductService {
 	
 	
 	
+	public String update(Product product) {
+		
+		return dao.updateById(product);
+	}
+	
+	
+	
 	
 	
 	

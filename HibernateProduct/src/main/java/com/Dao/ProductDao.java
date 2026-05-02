@@ -43,7 +43,30 @@ public class ProductDao {
 			return product;
 		}
 		
+		 
 		
+		
+		public String updateById(Product product) {
+			
+			Session session = sf.openSession();
+			
+			Transaction tr = session.beginTransaction();
+			
+			Product existing = session.get(Product.class, product.getId());
+			
+			existing.setName(product.getName());
+			existing.setPrice(product.getPrice());
+			existing.setCategory(product.getCategory());
+			existing.setQty(product.getQty());
+			
+			session.update(existing);
+			
+			tr.commit();
+			
+			session.close();
+			
+			return "Product Update";
+		}
 		
 		
 		

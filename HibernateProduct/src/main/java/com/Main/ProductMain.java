@@ -15,7 +15,10 @@ public class ProductMain {
 //		System.out.println(controller.insert(new Product(1, "Laptope", 70000, "Dell", 30)));
 		
 		
-		System.out.println(controller.get(1));
+//		System.out.println(controller.get(1));
+		
+		
+		System.out.println(controller.update(new Product(1, "Laptope", 75000, "HP", 40)));
 		
 		
 		

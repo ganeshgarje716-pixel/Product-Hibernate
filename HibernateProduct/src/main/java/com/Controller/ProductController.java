@@ -23,6 +23,12 @@ public class ProductController {
 	}
 	
 	
+	public String update(Product product) {
+		
+		return service.update(product);
+	}
+	
+	
 	
 	
 	
