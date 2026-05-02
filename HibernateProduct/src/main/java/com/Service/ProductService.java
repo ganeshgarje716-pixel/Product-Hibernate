@@ -39,6 +39,13 @@ public class ProductService {
 	
 	
 	
+	public String delete(int id) {
+		
+		return dao.deleteProduct(id);
+	}
+	
+	
+	
 	
 	
 	

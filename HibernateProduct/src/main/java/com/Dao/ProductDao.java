@@ -86,6 +86,26 @@ public class ProductDao {
 		
 		
 		
+		public String deleteProduct(int id) {
+			
+			Session session = sf.openSession();
+			
+			Transaction tr = session.beginTransaction();
+			
+			Product product = session.get(Product.class, id);
+			
+			session.delete(product);
+			
+			tr.commit();
+			
+			session.close();
+			
+			return "Product Delete";
+		}
+		
+		
+		
+		
 		
 		
 		

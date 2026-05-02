@@ -21,10 +21,16 @@ public class ProductMain {
 //		System.out.println(controller.update(new Product(1, "Laptope", 75000, "HP", 40)));
 		
 		
-		for (Product all : controller.getAll()) {
-			
-			System.out.println(all);
-		}
+//		for (Product all : controller.getAll()) {
+//			
+//			System.out.println(all);
+//		}
+		
+		
+		System.out.println(controller.delete(52));
+		
+		
+		
 		
 		
 		

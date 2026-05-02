@@ -40,6 +40,13 @@ public class ProductController {
 	
 	
 	
+	public String delete(int id) {
+		
+		return service.delete(id);
+	}
+	
+	
+	
 	
 	
 	
