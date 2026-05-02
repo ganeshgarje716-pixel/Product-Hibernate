@@ -1,5 +1,7 @@
 package com.Controller;
 
+import java.util.List;
+
 import com.Entity.Product;
 import com.Service.ProductService;
 
@@ -28,6 +30,13 @@ public class ProductController {
 		return service.update(product);
 	}
 	
+	
+	
+	
+	public List<Product> getAll(){
+		
+		return service.getAll();
+	}
 	
 	
 	

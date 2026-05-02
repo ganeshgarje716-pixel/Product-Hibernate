@@ -1,5 +1,7 @@
 package com.Service;
 
+import java.util.List;
+
 import com.Dao.ProductDao;
 import com.Entity.Product;
 
@@ -26,6 +28,13 @@ public class ProductService {
 	public String update(Product product) {
 		
 		return dao.updateById(product);
+	}
+	
+	
+	
+	public List<Product> getAll(){
+		
+		return dao.getAll();
 	}
 	
 	

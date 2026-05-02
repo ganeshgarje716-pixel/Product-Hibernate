@@ -1,5 +1,7 @@
 package com.Dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -66,6 +68,19 @@ public class ProductDao {
 			session.close();
 			
 			return "Product Update";
+		}
+		
+		
+		
+		
+		
+		public List<Product> getAll() {
+			
+			Session session = sf.openSession();
+			
+			List<Product> product = session.createQuery("from Product").list();
+			
+			return product;
 		}
 		
 		
